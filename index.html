@@ -30,27 +30,36 @@
         <label for="enteras">Raciones</label>
         <input type="number" class="form-control" id="raciones" autocomplete="off" value=0>
 
-        <input class="form-text-imput mt-3" type="checkbox" id="delivery" value="">
+        <input class="form-text-imput mt-3" type="checkbox" id="delivery" value="si">
         <label for="delivery">Delivery</label>
 
-        <button class="btn btn-primary btn-block" id="pedido" data-toggle="modal" data-target="#myModal">Registrar Pedido</button>
+        <!--button class="btn btn-primary btn-block" id="pedido" data-toggle="modal" data-target="#myModal">Registrar Pedido</button-->
       </div>
   </form>
 </body>
-<!--div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+<button type="button" class="btn btn-primary" id="pedido" data-toggle="modal" data-target="#exampleModal">
+  Registrar Pedido
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-          <h4 class="modal-title" id="myModalLabel">Registrar Pedido</h4>
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true" id="x">&times;</button>
+        <h5 class="modal-title" id="exampleModalLabel">Registrar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
       <div class="modal-body">
-          <iframe src="" width="100%" height="500" frameborder="0" allowtransparency="true" id="iframe"></iframe>
+        <iframe src="" height="400" width="100%" frameborder="0" scrolling='no' style="background-color: #fae3e1;"></iframe>
       </div>
       <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal" id="x">Registrar Otro</button>
+        <button type="button" class="btn btn-warning" data-dismiss="modal" id="editar">Editar</button>
       </div>
     </div>
   </div>
-</div-->
+</div>
 <script src="scripts.js"></script>
 </html>
