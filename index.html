@@ -17,15 +17,24 @@
     <form>
       <div class="form-group">
         <label for="espacio">Espacio</label>
-        <select id="espacio" class="form-control">
+        <a id="agregar-espacio" href="https://docs.google.com/forms/d/e/1FAIpQLSe3EoE1NNygYRp1ZtRwC3Pyn3MN14r3JzyOJPo5Ng2E40nJrA/viewform?usp=sf_link">
+          (Agregar nuevo espacio)
+        </a>
+        <select id="espacio" class="form-control mb-3">
           <option id="ninguno">Ninguno</option>
         </select>
 
+        <label for="dia">Día</label>
+        <select id="dia" class="form-control mb-3">
+          <option>Martes</option>
+          <option>Jueves</option>
+        </select>
+
         <label for="celu">Retira</label>
-        <input type="text" class="form-control" id="retira" autocomplete="off">
+        <input type="text" class="form-control mb-3" id="retira" autocomplete="off">
 
         <label for="celu">Celu</label>
-        <input type="tel" class="form-control" id="celu" autocomplete="off">
+        <input type="tel" class="form-control mb-3" id="celu" autocomplete="off">
 
         <label for="enteras">Raciones</label>
         <input type="number" class="form-control" id="raciones" autocomplete="off" value=0>
@@ -46,7 +55,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Registrar</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Registrar<br><small class="form-text text-muted">Precioná "Enviar" antes de registar otro pedido</small></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>

@@ -29,11 +29,12 @@ $(document).ready(function() {
 })
 datos = [];
   $("#pedido").click(function validacion() {
-    datos.push($("#espacio").val())
-    datos.push($("#retira").val())
-    datos.push($("#celu").val())
-    datos.push($("#raciones").val())
-    datos.push($("#delivery").prop('checked'))
+    datos.push($("#espacio").val());
+    datos.push($("#dia").val());
+    datos.push($("#retira").val());
+    datos.push($("#celu").val());
+    datos.push($("#raciones").val());
+    datos.push($("#delivery").prop('checked'));
     cadena = datos.join("|");
     var url = "https://docs.google.com/forms/d/e/1FAIpQLSd7-OHyJrTWN_g6FnOjgL0Yzy3p4C8r8S1HlUj0GYlAqltceQ/viewform?usp=pp_url&entry.1537211667="
     //window. location = url + cadena
